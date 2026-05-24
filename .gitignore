@@ -1,0 +1,42 @@
+# Credenciales y tokens de autenticacion
+credentials.json
+token.json
+*.json.bak
+
+# Variables de entorno
+.env
+.env.local
+.env.*
+
+# Entorno virtual Python
+.venv/
+venv/
+env/
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Build y distribucion
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Version de Python (gestionado por uv, opcional subir)
+.python-version
+
+# Lock file (opcional, descomenta si no quieres subir uv.lock)
+# uv.lock
+
+# Logs
+*.log
+
+# Editores e IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
