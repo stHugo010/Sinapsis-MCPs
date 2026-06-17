@@ -12,6 +12,7 @@ keywords = ["mcp", "notion", "api", "integration"]
 dependencies = [
     "mcp>=0.1.0",
     "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
 ]
 
 [project.optional-dependencies]

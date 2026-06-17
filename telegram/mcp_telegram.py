@@ -28,7 +28,7 @@ def create_server() -> FastMCP:
         ValueError: Si faltan variables de entorno requeridas
     """
     # Cargar variables de entorno
-    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../', '.env'))
+    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), './', '.env'))
     
     # Validar configuración
     token = os.getenv("TELEGRAM_TOKEN")

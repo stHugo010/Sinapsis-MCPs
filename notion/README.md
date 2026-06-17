@@ -68,7 +68,7 @@ Crea una nueva entrada en una base de datos.
 
 ### Variable de entorno
 
-Crea un archivo `.env` en la raiz del proyecto (el directorio `mcps/`) con:
+Crea un archivo `.env` en la raiz del mcp (el directorio `notion/`) con:
 
 ```
 NOTION_API_TOKEN=secret_xxxxxxxxxxxxxxxxxxxx

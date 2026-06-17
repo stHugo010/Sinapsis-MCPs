@@ -7,7 +7,10 @@ import logging
 import os
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Optional
+
+from dotenv import load_dotenv
 
 
 @dataclass
@@ -29,6 +32,10 @@ class NotionConfig:
     @classmethod
     def from_env(cls, args: Optional[list[str]] = None) -> "NotionConfig":
         """Crea configuración desde variables de entorno y argumentos CLI"""
+        env_path = Path(__file__).parent.parent.parent / ".env"
+        if env_path.exists():
+            load_dotenv(env_path)
+        
         if args is None:
             args = sys.argv
         
